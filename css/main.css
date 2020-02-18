@@ -59,6 +59,8 @@
 	-o-box-sizing: border-box;
 	-ms-box-sizing:border-box;
 	box-sizing: border-box;
+	
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -68,24 +70,70 @@
 
 /* -- LISTS -- */
 
+ul {
+	padding-bottom: 10px;
+}
+
+li {margin-right: 30px;
+	list-style: none;
+	display: inline-block;
+	font-size: 12px;
+	
+}
+
+
 /* -- MEDIA -- */
 
 /* -- TABLES -- */
 
 /* -- TYPOGRAPHY -- */
 
+a {
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'open sans', sans-serif;
+}
 
+a:hover {
+	color: #1ea78d;
+}
+
+p {
+	margin: 0;
+	line-height: 22px;
+}
+
+span {
+	font-family: 'open sans', sans-serif; 
+	color: #1ea78d;
+}
+h1, h4 {
+	font-size: 18px;
+	font-family: 'pacifico', cursive;
+}
+
+h1 {
+	padding-right: 30px;
+}
+
+
+h2 {
+	text-align: center;
+	display: inline-block;
+	border-bottom: 2px solid #dce1e5;
+	font-size: 30px;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 18px;
+}
 
 /*--------------------------------------------------------------
 5.0 - OBJECTS
 -------------------------------------------------------------- */
-
-
-/*--------------------------------------------------------------
-6.0 - COMPONENTS
--------------------------------------------------------------- */
 .wrapper {
-	width: 0px;
+	width: 1170px;
 	margin: 0 auto;
 }
 
@@ -93,11 +141,120 @@
 	overflow: auto;
 }
 
+/*--------------------------------------------------------------
+6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+
+.row section {
+	width: 350px;
+	margin-right: 40px;
+}
+.row section:last-child {
+	margin-right: 0px;
+}
+
+div .bg-grn {
+	margin: 0 auto;
+}
+
+h1 span {
+	font-size: 12px;
+}
+
+header p {
+	font-family: 'open sans', sans-serif;
+}
+
+header p, a, #team, #home, #team section p:last-child {
+	color:#fff;
+}
+
+section p {
+	color: #4D606E
+}
+
+#home span {
+	color: #104f41;
+}
+
+#home {
+	background-color: #10443f;
+}
+
+#home + div{
+	background-color: #104f41;
+	text-align: center;
+	padding: 150px 0 100px;
+	font-family: 'open sans', sans-serif;
+}
+
+#home + div p {
+	font: 400 40px/45px open sans, sans-serif;
+}
+
+#home + div p:last-child {
+	font-size: 12px;
+}
+
+#creative, h2 {
+	color: #1ea78d;
+}
+
+
+#features {
+	background-color: #f4f7f9;
+	padding-top: 70px;
+	padding-bottom: 140px;
+}
+
+#features .wrapper>header, #works .wrapper>header {
+	text-align: center;
+	
+}
+
+#works {
+		padding-bottom: 200px;
+}
+
+#works section{
+	width: 950px;
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+#works p {
+	font-size: 20px;
+	font-weight: 600;
+}
+#team, #works {
+	padding: 90px 0;
+}
+#team {
+	background-color: #1ea78d;
+	border-top: 5px solid #104f41;
+}
+
+#team section {
+	width: 250px;
+}
+
+
 /* -- BUTTONS -- */
 
 /* -- HEADER -- */
+header h1, header>p, #home>header, .row section {
+	float: left;
+}
 
 /* -- NAVIGATION -- */
+
+nav, .row section:last-child {
+	float: right;
+}
+
+
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES
@@ -106,7 +263,14 @@
 
 /* -- ALIGNMENT -- */
 
+
+
 /* -- COLOR -- */
+
+
+
+ 
+
 
 /* -- SIZE -- */
 
